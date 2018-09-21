@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent signUpIntent = new Intent(LoginActivity.this,SignupActivity.class);
                 startActivity(signUpIntent);
+                finish();
             }
         });
 
@@ -65,12 +66,16 @@ public class LoginActivity extends AppCompatActivity {
                 if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)) {
                     progressBar.setVisibility(View.VISIBLE);
                     mAuth.signInWithEmailAndPassword(email, password)
-                            .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                        @Override
-                        public void onSuccess(AuthResult authResult) {
-
-                            Toast.makeText(LoginActivity.this, "success ", Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.INVISIBLE);
+                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()){
+                                        Toast.makeText(LoginActivity.this, "success ", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.INVISIBLE);
+                                    }else {
+                                        Toast.makeText(LoginActivity.this, "Error :"+ task.getException(), Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.INVISIBLE);
+                               }
                         }
                     });
                     }

@@ -75,10 +75,10 @@ public class LoginActivity extends AppCompatActivity {
                                     }else {
                                         Toast.makeText(LoginActivity.this, "Error :"+ task.getException(), Toast.LENGTH_SHORT).show();
                                         progressBar.setVisibility(View.INVISIBLE);
-                               }
+                                    }
                         }
                     });
-                    }
+                }
             }
         });
     }

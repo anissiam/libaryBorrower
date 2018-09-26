@@ -58,7 +58,9 @@ public class SignupActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(SignupActivity.this, "success", Toast.LENGTH_SHORT).show();
+                            Intent UserDataIntent = new Intent(SignupActivity.this,BorrwerDataActivity.class);
+                            startActivity(UserDataIntent);
+                            finish();
                             progressBar.setVisibility(View.INVISIBLE);
                         } else {
                             Toast.makeText(SignupActivity.this, "Error :"+task.getException(), Toast.LENGTH_SHORT).show();

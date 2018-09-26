@@ -65,6 +65,15 @@ public class LoginActivity extends AppCompatActivity implements  View.OnClickLis
 
         mAuth = FirebaseAuth.getInstance();
 
+        tvForgetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent signUpIntent = new Intent(LoginActivity.this,ForgetPasswordActivity.class);
+                startActivity(signUpIntent);
+                finish();
+            }
+        });
+
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {

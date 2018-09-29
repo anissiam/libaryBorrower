@@ -20,13 +20,9 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         mAuth = FirebaseAuth.getInstance();
         StartAnimations();
-        FirebaseUser currentUser =mAuth.getCurrentUser();
-        if (currentUser == null){
-            Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
-            startActivity(intent);
-            finish();
+
         }
-    }
+
     private void StartAnimations() {
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.alpha);
         anim.reset();
@@ -58,7 +54,13 @@ public class SplashActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     // do nothing
                 } finally {
-                    SplashActivity.this.finish();
+                    finish();
+                    FirebaseUser currentUser =mAuth.getCurrentUser();
+                    if (currentUser != null) {
+                        Intent intent = new Intent(SplashActivity.this, BottomNavigationActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
 
             }

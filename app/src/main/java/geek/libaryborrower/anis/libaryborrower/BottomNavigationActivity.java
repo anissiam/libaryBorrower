@@ -87,6 +87,7 @@ public class BottomNavigationActivity extends AppCompatActivity {
                 prevMenuItem = navigation.getMenu().getItem(i);
 
             }
+            //
 
             @Override
             public void onPageScrollStateChanged(int i) {

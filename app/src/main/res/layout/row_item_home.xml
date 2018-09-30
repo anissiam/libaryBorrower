@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#fef4ff"
+    android:background="?android:attr/selectableItemBackground">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        android:background="#000000"
+        >
+
+        <ImageView
+            android:id="@+id/imgBookCover"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_cornar"
+            tools:srcCompat="@tools:sample/avatars[6]" />
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            tools:text="لا تقربوا النساء قبل الخامسة والعشرين "
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvBookAuther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="معاذ جهاد "
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="#fef4ff"
+                tools:src="#851f8f"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="#fef4ff"
+                tools:src="#851f8f"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="#fef4ff"
+                tools:src="#851f8f"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="#fef4ff"
+                tools:src="#851f8f"/>
+
+
+        </LinearLayout>
+        <view
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20/20/20"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                tools:text="available"
+                tools:textSize="15dp"
+                tools:gravity="center"
+                android:textColor="#ffffff"
+                tools:background="#22b922"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic_favorite_border_black_24dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

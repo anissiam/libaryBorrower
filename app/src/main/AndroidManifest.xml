@@ -22,7 +22,8 @@
         <activity android:name=".ForgetPasswordActivity" />
         <activity
             android:name=".BottomNavigationActivity"
-            android:label="@string/title_activity_botton_navigation"></activity>
+            android:label="@string/title_activity_botton_navigation" />
+        <activity android:name=".ProfileBookActivity"></activity>
     </application>
 
 </manifest>

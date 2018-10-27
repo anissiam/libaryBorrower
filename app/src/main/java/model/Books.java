@@ -1,14 +1,20 @@
 package model;
 
-public class Books {
-    String title , author, cover,isbn,barcode,edition,pageNumbers,publisher
-            ,translator,language,linguisticEditor,description,profileDesigner,available,category,type;
+import java.util.Date;
 
+public class Books {
+    String title , author, cover,isbn,barcode,edition,pageNumbers,publisher,translator,language
+            ,linguisticEditor,description,profileDesigner,available,category,type;
+Date date_Created;
     public Books() {
     }
 
-    public Books(String title, String author, String cover, String isbn, String barcode, String edition, String pageNumbers, String publisher,
-                 String translator, String language, String linguisticEditor, String description, String profileDesigner, String available, String category, String type) {
+    public Books(String title, String author, String cover
+            , String isbn, String barcode, String edition
+            , String pageNumbers, String publisher, String translator
+            , String language, String linguisticEditor, String description
+            , String profileDesigner, String available, String category
+            , String type,Date date_Created) {
         this.title = title;
         this.author = author;
         this.cover = cover;
@@ -25,6 +31,7 @@ public class Books {
         this.available = available;
         this.category = category;
         this.type = type;
+        this.date_Created = date_Created;
     }
 
     public String getTitle() {
@@ -153,5 +160,13 @@ public class Books {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Date getDate_Created() {
+        return date_Created;
+    }
+
+    public void setDate_Created(Date date_Created) {
+        this.date_Created = date_Created;
     }
 }

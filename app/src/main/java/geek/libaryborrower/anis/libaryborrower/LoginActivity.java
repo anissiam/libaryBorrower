@@ -159,7 +159,7 @@ public class LoginActivity extends AppCompatActivity implements  View.OnClickLis
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                         } else {
-                            Intent UserDataIntent = new Intent(LoginActivity.this,BorrwerDataActivity.class);
+                            Intent UserDataIntent = new Intent(LoginActivity.this,BottomNavigationActivity.class);
                             startActivity(UserDataIntent);
                             finish();
                         }
@@ -212,7 +212,3 @@ public class LoginActivity extends AppCompatActivity implements  View.OnClickLis
 
     }
 }
-
-
-
-

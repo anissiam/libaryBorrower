@@ -33,7 +33,7 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/gonewiththewind"
+                    tools:background="@drawable/round_cornar"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                      />
@@ -46,126 +46,137 @@
                     app:layout_constraintGuide_begin="161dp" />
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/tvType"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:textSize="15sp"
+                    android:textColor="#6b6b6b"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="parent"
                     android:text="Novel" />
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/tvTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:textSize="17sp"
                     android:textStyle="bold"
+                    android:textColor="#6b6b6b"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/tvType"
                     android:text="Gone with the Wind" />
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/tvBookAuthor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:textSize="15sp"
                     android:textStyle="italic"
+                    android:textColor="#6b6b6b"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle"
                     android:text="by Margaret Mitchell" />
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/tvISBN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:textSize="15sp"
+                    android:textColor="#6b6b6b"
                     android:text="ISBN 978-977-6303-25-6"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvBookAuthor" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/tvEdition"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:text="second edition "
+                    android:textColor="#6b6b6b"
                     android:textSize="15sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvISBN" />
 
                 <TextView
-                    android:id="@+id/textView21"
+                    android:id="@+id/tvNoOfPage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:text="317 pages"
+                    android:textColor="#6b6b6b"
                     android:textStyle="italic"
                     android:textSize="15sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvEdition" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/tvPublisher"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
+                    android:textColor="#6b6b6b"
                     android:text="United publisher"
                     android:textSize="15sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvNoOfPage" />
 
                 <TextView
-                    android:id="@+id/textView23"
+                    android:id="@+id/tvLinguisticEditor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="12dp"
+                    android:textColor="#6b6b6b"
                     android:text="Linguistic Editor"
                     android:textSize="15sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvPublisher" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/tvCoverDesigner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:text="Cover designer"
                     android:textSize="15sp"
+                    android:textColor="#6b6b6b"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvLinguisticEditor" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/tvCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:text="category "
                     android:textSize="15sp"
+                    android:textColor="#6b6b6b"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvLanguage" />
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/tvLanguage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
-                    android:text="Eng....."
+                    android:text="Language"
+                    android:textColor="#6b6b6b"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvCoverDesigner" />
 
             </android.support.constraint.ConstraintLayout>
 
@@ -211,7 +222,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/food_name"
+                        android:id="@+id/tvIsAvailable"
                         android:layout_marginTop="8dp"
                         android:padding="10dp"
                         android:text="Available "
@@ -237,7 +248,7 @@
                                 android:orientation="vertical"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
-                                <TextView
+                               <!-- <TextView
                                     android:id="@+id/food_price"
                                     android:text="Place of Book "
                                     android:textColor="@color/colorPrimary"
@@ -250,7 +261,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="aaaa,aaaa \n maaaa"
-                                    android:textSize="18sp"/>
+                                    android:textSize="18sp"/>-->
 
                             </LinearLayout>
 
@@ -282,7 +293,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/feedback"
+                    android:id="@+id/tvDescription"
                     android:layout_marginTop="12dp"
                     android:lineSpacingMultiplier="1.5"
                     android:padding="12dp"
@@ -308,16 +319,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/food_description"
-                    android:layout_marginTop="12dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:padding="12dp"
-                    android:text="Gone with the Wind is a novel written by Margaret Mitchell, first published in 1936. The story is set in Clayton County, Georgia, and Atlanta during the American Civil War and Reconstruction era. It depicts the struggles of young Scarlett O'Hara, the daughter of a well-to-do plantation owner, who must use every means at her disposal to claw her way out of the poverty she finds herself in after Sherman's March to the Sea. A historical novel, the story is a Bildungsroman or coming-of-age story, with the title taken from a poem written by Ernest Dowson."
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/recyclerView"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+               </android.support.v7.widget.RecyclerView>
 
             </android.support.v7.widget.CardView>
         </LinearLayout>

@@ -10,8 +10,8 @@
     android:layout_marginTop="5dp"
     android:layout_marginRight="5dp"
     android:layout_marginLeft="5dp"
+    android:id="@+id/cardView"
     app:cardCornerRadius="15dp"
-    app:cardBackgroundColor="#fef4ff"
     android:background="?android:attr/selectableItemBackground">
     <LinearLayout
         android:orientation="horizontal"
@@ -38,60 +38,37 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/tvBookTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
+            android:layout_weight="1"
             tools:text="لا تقربوا النساء قبل الخامسة والعشرين "
             android:layout_marginTop="5dp"/>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/tvBookAuther"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="معاذ جهاد "
+                android:gravity="left"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"/>
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:src="#fef4ff"
-                tools:src="#851f8f"/>
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:src="#fef4ff"
-                tools:src="#851f8f"/>
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:src="#fef4ff"
-                tools:src="#851f8f"/>
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:src="#fef4ff"
-                tools:src="#851f8f"/>
 
 
-        </LinearLayout>
+
+
         <View
             android:layout_marginTop="4dp"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#000000"/>
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -104,7 +81,7 @@
                 android:id="@+id/tvIsAvailable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.8"
+                android:layout_weight="1"
                 tools:text="available"
                 tools:textSize="15dp"
                 tools:gravity="center"
@@ -115,7 +92,7 @@
                 android:id="@+id/icon_like"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 app:srcCompat="@drawable/ic_favorite_border_black_24dp"/>
 
         </LinearLayout>

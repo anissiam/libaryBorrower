@@ -4,8 +4,9 @@ import java.util.Date;
 
 public class Books {
     String title , author, cover,isbn,barcode,edition,pageNumbers,publisher,translator,language
-            ,linguisticEditor,description,profileDesigner,available,category,type;
-Date date_Created;
+            ,linguisticEditor,description,profileDesigner,category,type;
+    Date date_Created;
+    boolean available;
     public Books() {
     }
 
@@ -13,7 +14,7 @@ Date date_Created;
             , String isbn, String barcode, String edition
             , String pageNumbers, String publisher, String translator
             , String language, String linguisticEditor, String description
-            , String profileDesigner, String available, String category
+            , String profileDesigner, boolean available, String category
             , String type,Date date_Created) {
         this.title = title;
         this.author = author;
@@ -138,11 +139,11 @@ Date date_Created;
         this.profileDesigner = profileDesigner;
     }
 
-    public String getAvailable() {
+    public boolean getAvailable() {
         return available;
     }
 
-    public void setAvailable(String available) {
+    public void setAvailable(boolean available) {
         this.available = available;
     }
 
